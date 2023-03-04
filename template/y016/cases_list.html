@@ -1,0 +1,73 @@
+[field:head] 
+  <div class="clear"></div> 
+  <div class="clear"> 
+  </div> 
+ 
+  <div class="inside_main"> 
+    <div class="main_left"> 
+     <div class="leftitem"> 
+      <div class="tit">
+案例分类
+      </div> 
+      <div class="cates"> 
+       <dl> 
+
+			{zso:casestype (row='all' orderby='px')}
+                   <dt><a href="[arcurl]">[typename]</a>		
+				   </dt>
+   {/zso:casestype}
+         
+       </dl> 
+      </div> 
+     </div> 
+       
+       
+     <div class="leftitem"> 
+      <div class="tit">
+        联系我们 
+      </div> 
+      <div class="lianxi"> 
+       <dl> 
+        
+        <dd>
+    <p>联系:[field:linkpeople]</p>
+<p>手机: [field:mobile]</p>	
+<p>电话: [field:phone]</p>
+<p>传真: [field:companyfax]</p>
+<p>邮箱: [field:companyemail]</p>
+<p>网址:[field:companyurl]</p>	
+<p>地址: [field:companyaddress]</p>
+        </dd> 
+       </dl> 
+      </div> 
+     </div> 
+    </div> 
+   <div class="main_right"> 
+    <div class="sitemap">
+      当前位置：[field:navigation]
+    </div> 
+    <div class="cateslist"> 
+     <dl>  
+      {zso:caseslist (row='12' orderby='px' page='true' data='all' )}
+                    <dd>
+                        <div class="img">
+                            <a href="[arcurl]" >
+                                
+                                <img src="[filepath]" title="[title]" alt="[title]" height="208" width="178"/>
+                                </a></div>
+                        <div class="txt">
+                            <a href="[arcurl]"  >[title]</a></div>
+                         
+                    </dd>
+                    
+                   {/zso:caseslist}
+     </dl> 
+     		<div class="pages"><ul>{pagelist:caseslist/}</span>
+</ul></div>    
+    </div> 
+      
+   </div> 
+  </div> 
+[field:foot]
+ </body>
+</html>

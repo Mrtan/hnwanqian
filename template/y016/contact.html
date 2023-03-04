@@ -1,0 +1,56 @@
+[field:head]
+  <div class="clear"></div> 
+ 
+  <div class="all"> 
+   <div class="inside_main"> 
+    <div class="main_left"> 
+     <div class="leftitem"> 
+      <div class="tit">
+     关于我们
+      </div> 
+      <div class="cates"> 
+       <dl> 
+      	{zso:about (row='all')}
+			<dt><a href="[arcurl]">[title]</a></dt>
+	{/zso:about}	
+         
+       </dl> 
+      </div> 
+     </div> 
+       
+       
+     <div class="leftitem"> 
+      <div class="tit">
+        联系我们 
+      </div> 
+      <div class="lianxi"> 
+       <dl> 
+        
+        <dd>
+   <p>联系:[field:linkpeople]</p>
+<p>手机: [field:mobile]</p>	
+<p>电话: [field:phone]</p>
+<p>传真: [field:companyfax]</p>
+<p>邮箱: [field:companyemail]</p>
+<p>网址:[field:companyurl]</p>	
+<p>地址: [field:companyaddress]</p>
+        </dd> 
+       </dl> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="main_right"> 
+     <div class="sitemap">
+       当前位置：[field:navigation]
+     </div> 
+     <div class="content"> 
+      <p>[field:link_we_info]</p> 
+      
+     </div> 
+       
+    </div> 
+   </div> 
+  </div> 
+[field:foot]
+ </body>
+</html>

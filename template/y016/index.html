@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script>if(window.outerWidth < 768) window.location = '/mobile';</script>
+ <head> 
+ <title>[field:titleinfo]</title>
+<meta name="Keywords" content="[field:keywords]">
+<meta name="baidu-site-verification" content="4AtEOI30Lb" />
+<meta name="Description" content="湖南万千光伏科技有限公司官网_光伏发电一站式服务_光伏发电站承建_湖南光伏发电_光伏发电_太阳能发电_光伏发电加盟_太阳能发电加盟_光伏发电十大品牌_">
+<meta name="Description" content="[field:description]">
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+  <link href="/template/[field:css_color]/lib/css.css" rel="stylesheet" type="text/css" /> 
+  <link href="/template/[field:css_color]/lib/in.css" rel="stylesheet" type="text/css" /> 
+  <script src="/template/[field:css_color]/lib/jquery-1.8.2.min.js" type="text/javascript"></script> 
+  <script type="text/javascript" src="/template/[field:css_color]/lib/js.js"></script> 
+  <script type="text/javascript" src="/template/[field:css_color]/lib/ptabs.js"></script> 
+  <script src="/template/[field:css_color]/lib/outjs.js"></script> 
+ </head> 
+ <body> 
+ <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?619e651332a223ef095ea264854d8d7d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> 
+  <div class="top_n"> 
+   <div class="left"> 
+    <div class="logo">
+     <h1><a href='/' ><img src="[field:logopath]" alt="[field:companyname]" title="[field:companyname]"  /></a></h1>
+    </div> 
+   
+    <div class="trait">
+     [field:IndexImage1]
+    </div> 
+   </div> 
+   <div class="right" style="margin-top:40px;">
+    全国咨询热线：
+    <br />
+    <span>[field:phone]</span>
+ 
+   </div> 
+  </div> 
+  <div class="clear"></div> 
+  <div class="nav"> 
+   <div class="menu"> 
+    <ul class="nav1"> 
+    {zso:navlist (row='all' orderby='tj' parentid='0')}
+            <li><a href="[path]">[typename (length='15')]</a>
+              
+              <ul>
+                {zso:selflist ( row='all' orderby='tj' type='parentid')}
+                <li><a href="[selflist.path]">[selflist.typename(length='12')]</a></li>
+                {/zso:selflist} 
+              </ul>
+              
+            </li>
+            {/zso:navlist}  
+    </ul> 
+   </div> 
+  </div> 
+  <div class="clear"></div> 
+  <div class="banner"> 
+   <div class="flexslider"> 
+    <ul class="slides"> 
+	
+
+	
+	{field:banner (row='3')} 
+     <li style="background:url([path]) 50% 0 no-repeat;"><a  href=" " style="width:100%; height:500px; display:block"></a></li> 
+	 {/field:banner} 
+    
+    </ul> 
+   </div> 
+   <script>
+ $(function(){
+ $('.flexslider').flexslider({
+ directionNav: true,
+ pauseOnAction: false
+ });
+ });
+ </script> 
+  </div> 
+  <div class="clear"></div> 
+  <div class="form_bg"> 
+   <div class="search"> 
+    <div class="search_t">
+热门关键词： 
+<a href="/">[keyname1]</a><a href="/">[keyname2]</a><a href="/">[keyname3]</a>
+    </div> 
+   
+   </div> 
+  </div> 
+  <div class="clear"></div> 
+  <div class="tedian"> 
+     <div class="tech_c"> 
+    [field:IndexImage2]
+   </div>
+  </div> 
+  <div class="hz_bg"> 
+   <div class="he_title"> 
+    <h3><a>战略合作伙伴<p>感谢以下客户对我们的大力支持</p></a></h3> 
+   </div> 
+   <div class="gd_01"> 
+    <div id="simgs"> 
+     <ul> 
+	 {zso:caseslist (row='8' orderby='px'  data='all' category='6')}	
+      <li><a class="img" href="[arcurl]"  > <img src="[filepath]" title="[title]" alt="[title]"height="232" width="115" class="loadimg" /></a><a href="[arcurl]">[title]</a></li> 
+	   {/zso:caseslist} 
+      
+     </ul> 
+    </div> 
+    <em class="t_l"><a href="javascript:;" id="lefts" title="向右"> <img src="/template/[field:css_color]/picture/left.jpg" alt="向右" title="向右" /></a></em> 
+    <em class="t_r"><a href="javascript:;" id="rights" title="向左"> <img src="/template/[field:css_color]/picture/right.jpg" alt="向左" title="向左" /></a></em> 
+   </div> 
+  </div> 
+  <script language="javascript" type="text/javascript">
+
+
+
+    $(function () {
+
+
+
+        var cc = new ScrollPic();
+
+
+
+        cc.scrollContId = "simgs"; // 内容容器ID
+
+
+
+        cc.arrLeftId = "lefts"; //左箭头ID
+
+
+
+        cc.arrRightId = "rights"; //右箭头ID
+
+
+
+        cc.frameWidth = 1080; //显示框宽度
+
+
+
+        cc.pageWidth = 1; //翻页宽度
+
+
+
+        cc.speed = 10; //移动速度(单位毫秒，越小越快)
+
+
+
+        cc.space = 10; //每次移动像素(单位px，越大越快)
+
+
+
+        cc.autoPlay = true; //自动播放
+
+
+
+        cc.autoPlayTime = 0.03; //自动播放间隔时间(秒)
+
+
+
+        cc.initialize(); //初始化
+
+
+
+    });
+
+
+
+</script> 
+  <div style="clear:both;"></div>
+  <div class="product"> 
+   <div class="list"> 
+    <div class="list_t">
+     <h2><a>产品中心<p>Product Center</p></a></h2>
+    </div> 
+    <div class="list_con"> 
+     <ul id="menu"> 
+
+{zso:protypelist(row='all' orderby='tj' parentid='0')}	 
+      <li> <a href="[arcurl]"  class="first">[typename]</a> 
+       <ul> 
+       </ul> </li> 
+	   
+  {/zso:protypelist}
+        	
+    
+     </ul> 
+    </div> 
+   </div> 
+   <div id="tab"> 
+    <ul class="tab_menu"> 
+     <li class="selected">热销产品</li> 
+  
+     <a href="/supply/"   class="more">MORE+</a> 
+    </ul> 
+    <div class="tab_box"> 
+     <div> 
+      <ul> 
+  {zso:prolist (row='9' orderby='px')}
+       <li class="img4"><a href="[arcurl]" ><img src="[path]" title="[productname]" alt="[productname]"  width="252" height="150" /></a><p><a href="[arcurl]"  >[productname]</a></p></li> 
+  {/zso:prolist}    
+		    
+       
+      </ul> 
+     </div> 
+       
+    </div> 
+   </div> 
+  </div> 
+  <div class="banner1">
+      <div class="indeximage5" style="display:none;">[field:indeximage5]</div>
+      <script type="text/javascript">
+        var url=$(".indeximage5 img").attr("src");
+        $(".banner1").attr("style","background:url"+'('+url+')'+'no-repeat center');
+      </script>
+   <div class="zx"> 
+    <div class="zx1"> 
+     <div class="rexian">
+      服务热线：
+      <p>[field:phone]</p>
+   
+     </div> 
+     
+    </div> 
+   </div> 
+  </div> 
+  <div class="clear"></div> 
+  <div class="case_bg"> 
+   <div class="case_wrap"> 
+    <div class="con_width"> 
+     <div class="case_t">
+      <h3><a><span>工程案例</span>展示</a></h3>
+     </div> 
+     <div class="case_con"> 
+      <ul>  
+	  {zso:caseslist (limit='0,1' orderby='px' category='5')}
+	  
+       <li data-scroll-reveal="enter right and move 20px over 0.9s"> <a href="[arcurl]"  ><img src="[filepath]" title="[title]" alt="[title]" height="566" width="428" /></a> 
+        <div class="anl_rig" style="display:none"> 
+         <div class="an_more"> 
+          <h5><a href="[arcurl]" > [title]</a></h5> 
+         
+         </div> 
+        </div> </li> 
+          
+         {/zso:caseslist}
+         
+          {zso:caseslist (orderby='px' category='5' limit='1,4')}
+       <li data-scroll-reveal="enter left and move 20px over 0.9s"> <a href="[arcurl]"><img src="[filepath]" title="[title]" alt="[title]" height="270" width="204"  /></a> 
+        <div class="anl_rig" style="display:none"> 
+         <div class="an_more"> 
+          <h5><a href="[arcurl]" > [title]</a></h5>          
+         </div> 
+        </div> </li>
+		
+		 {/zso:caseslist} 
+         
+      
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <script type="text/javascript">
+ $(document).ready(function(){
+ $(".case_con ul li").hover(function() {
+  $(this).find("img").stop().animate({width:"105%",height:"105%"});
+ $(this).find(".anl_rig").css("display","block");
+  }, function() {
+ $(this).find("img").stop().animate({width:"100%",height:"100%"});
+ $(this).find(".anl_rig").css("display","none");
+ })
+  $(function(){
+ $(".anl_rig").mouseenter(function(){
+  $(this).addClass("hover");
+  });
+  $(".anl_rig").mouseleave(function(){
+  $(this).removeClass("hover");
+  });
+ });
+ });
+ 
+</script> 
+  <div class="clear"></div> 
+  <div class="ysbg"> 
+   [field:IndexImage3] 
+  </div> 
+  <div class="about"> 
+   <div class="ab_left"> 
+    <div class="ab_img"> 
+   [field:IndexImage4]
+    </div> 
+ 
+    <script language="javascript" type="text/javascript">
+
+
+
+    $(function () {
+
+
+
+        var cc = new ScrollPic();
+
+
+
+        cc.scrollContId = "simgs2"; // 内容容器ID
+
+
+
+        cc.arrLeftId = "lefts"; //左箭头ID
+
+
+
+        cc.arrRightId = "rights"; //右箭头ID
+
+
+
+        cc.frameWidth = 824; //显示框宽度
+
+
+
+        cc.pageWidth = 1; //翻页宽度
+
+
+
+        cc.speed = 10; //移动速度(单位毫秒，越小越快)
+
+
+
+        cc.space = 10; //每次移动像素(单位px，越大越快)
+
+
+
+        cc.autoPlay = true; //自动播放
+
+
+
+        cc.autoPlayTime = 0.03; //自动播放间隔时间(秒)
+
+
+
+        cc.initialize(); //初始化
+
+
+
+    });
+
+
+
+</script> 
+   </div> 
+   <div class="box"> 
+    <h3><a>ABOUT<b>关于我们</b></a></h3> 
+    <p>     [field:company_indexinfo(length='300')]
+…… </p> 
+    <div class="xq">
+     <a href="/about/"> 查看更多</a>
+    </div> 
+   </div> 
+  </div> 
+  <div class="clear"></div> 
+  <div class="hz_bg"> 
+   <div class="he_title"> 
+    <h3><a>企业荣誉资质<p>您的信任将是我们不懈的动力</p></a></h3> 
+   </div> 
+   <div class="gd_01"> 
+    <div id="simgs"> 
+     <ul> 
+	 {zso:caseslist (row='4' orderby='px' data='all' category='3')}	
+      <li><a class="img" href="[arcurl]"  > <img src="[filepath]" title="[title]" alt="[title]"height="232" width="115" class="loadimg" /></a><a href="[arcurl]">[title]</a></li> 
+	   {/zso:caseslist} 
+      
+     </ul> 
+    </div> 
+   
+   </div> 
+  </div> 
+  <script language="javascript" type="text/javascript">
+
+
+
+    $(function () {
+
+
+
+        var cc = new ScrollPic();
+
+
+
+        cc.scrollContId = "simgs"; // 内容容器ID
+
+
+
+        cc.arrLeftId = "lefts"; //左箭头ID
+
+
+
+        cc.arrRightId = "rights"; //右箭头ID
+
+
+
+        cc.frameWidth = 1080; //显示框宽度
+
+
+
+        cc.pageWidth = 1; //翻页宽度
+
+
+
+        cc.speed = 10; //移动速度(单位毫秒，越小越快)
+
+
+
+        cc.space = 10; //每次移动像素(单位px，越大越快)
+
+
+
+        cc.autoPlay = true; //自动播放
+
+
+
+        cc.autoPlayTime = 0.03; //自动播放间隔时间(秒)
+
+
+
+        cc.initialize(); //初始化
+
+
+
+    });
+
+
+
+</script> 
+ <div class="clear"></div> 
+  <div class="banner2">
+      <div class="indeximage6" style="display:none;">[field:indeximage6]</div>
+      <script type="text/javascript">
+        var url=$(".indeximage6 img").attr("src");
+        $(".banner2").attr("style","background:url"+'('+url+')'+'no-repeat center');
+      </script>
+   <div class="zx"> 
+    <div class="zx1"> 
+     <div class="rexian">
+      服务热线：
+      <p>[field:phone]</p>
+    
+     </div> 
+     
+    </div> 
+   </div> 
+  </div> 
+  <div class="clear"></div> 
+  <div class="trends"> 
+   <div class="left"> 
+    <div class="question_title"> 
+     <h3><a>常见问题</a></h3> 
+     <a href="/news/" class="more">MORE+</a> 
+    </div> 
+    <div class="clear"></div> 
+    <div class="question"> 
+     <ul id="ticker2"> 
+	  {zso:newslist (row='5' category='9' )}
+      <li> 
+       <div class="wen">
+        <a href="[arcurl]" >[title]</a>
+       </div> 
+       <div class="da">
+        <p>[description]…</p>
+       </div> </li> 
+        {/zso:newslist}
+	       
+     
+     </ul> 
+    </div> 
+   </div> 
+   <div class="tab_menu"> 
+    <div class="ttt"> 
+     <ul> 
+      <li><h3><a>公司新闻</a></h3></li> 
+      <li><h3><a>行业新闻</a></h3></li> 
+     </ul> 
+     <div class="gd">
+      <a href="/news/" title="MORE+">MORE+</a>
+     </div> 
+    </div> 
+    <div class="tabcont"> 
+     <div class="tabc"> 
+	 
+	  {zso:newslist (row='1' category='7')}	
+      <div class="box_nr"> 
+       <a href="[arcurl]"  ><img src="[filepath]" title="[title]" alt="[title]" height="192" width="324"> </a> 
+       <h5><a href="[arcurl]"  >[title]</a></h5> 
+       <p>[description]……</p> 
+       <a href="[arcurl]" class="more">更多&gt;&gt;</a> 
+      </div> 
+	    {/zso:newslist}   
+	  
+	  
+      <div class="clear"></div> 
+      <div class="news"> 
+       <ul>   
+{zso:newslist (limit='1,4' category='7')}		   
+        <li><a href="[arcurl]" >[title]</a></li> 
+  {/zso:newslist}   
+	        
+       
+       
+       </ul> 
+      </div> 
+     </div> 
+     <div class="tabc" style="display:none;"> 
+      	{zso:newslist (row='1' category='8' )} 
+      <div class="box_nr"> 
+       <a href="[arcurl]"  ><img src="[filepath]" title="[title]" alt="[title]" height="192" width="324"> </a> 
+       <h5><a href="[arcurl]"  >[title]</a></h5> 
+       <p>[description]……</p> 
+       <a href="[arcurl]" class="more">更多&gt;&gt;</a> 
+      </div> 
+ {/zso:newslist} 	  
+      <div class="clear"></div> 
+      <div class="news"> 
+       <ul> 
+	{zso:newslist (category='8' limit='1,4' )}
+	 <li><a href="[arcurl]" >[title]</a></li> 
+	   {/zso:newslist}  
+	   </ul> 
+      </div> 
+     </div>
+	 
+    </div> 
+    <script type="text/javascript">
+
+
+
+		pTabs.run({tabs:".ttt",tl:"li",onClass:"hover",tabsc:".tabcont",tabc:"",e:"mouseover"})
+
+
+
+	</script> 
+   </div> 
+  </div> 
+  <div class="clear"></div> 
+  <div class="catenate_bg"> 
+   <div class="catenate"> 
+    <div class="link">
+     友情链接入口
+    </div> 
+    <div class="yq">
+    {zso:business (row='20')}<a href="[arcurl]">[sm]</a>{/zso:business}     
+     
+    </div> 
+   </div> 
+  </div> 
+  <div class="catenate_bg"> 
+   <div class="catenate"> 
+    <div class="link">
+     地区分站入口
+    </div> 
+    <div class="yq">
+    {zsosub:substation (row='20')}<a href="[link]" target="_blank" title="[stitle]"> [stitle]</a>{/zsosub:substation}    
+     
+    </div> 
+   </div> 
+  </div> 
+  <div class="clear"></div> 
+[field:foot]
+ </body>
+</html>

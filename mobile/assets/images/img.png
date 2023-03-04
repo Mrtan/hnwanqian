@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				font-family: "微软雅黑";
+				font-weight: normal;
+				font-style: normal;
+				box-sizing: border-box;
+			}
+			.head{
+				width: 100%;
+				position: relative;
+				min-width: 1200px;
+			}
+			.head_txt{
+				position: absolute;
+				width: 100%;
+				height: 45%;
+				font-size: 18px;
+				color: #999999;
+				bottom: 0;
+				left: 0;
+				text-align: center;
+				line-height: 40px;
+			}
+			.mtxt{display: none;}
+			.head_txt a{
+				font-size: 18px;
+				color: #999999;
+			}
+			.content{
+				width: 1200px;
+				margin: auto;
+				font-size: 18px;
+				color: #999999;
+			}
+			.content_head{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding:40px 0;
+			}
+			.content_head i{
+				width: 490px;
+				height: 1px;
+				background: #999;
+				display: inline-block;
+			}
+			.content_list{
+			}
+			.content_list li{
+				float: left;
+				width: 267px;
+				height: 315px;
+				overflow: hidden;
+				border-radius: 10px;
+				box-shadow:  0 0 10px 2px #999;
+			}
+			.content_list li img{
+				position: relative;top: -2px;
+				left: -1px;
+			}
+			.content_list li:nth-child(2),.content_list li:nth-child(3),.content_list li:nth-child(4){
+				margin-left: 40px;
+			}
+			.mbg{display: none;}
+			@media (max-width:750px ) {
+				.head{
+					min-width: 100%;
+				}
+				.mbg{display: block;}
+				.pcbg{display: none;}
+				.head_txt{
+					font-size: 0.22rem;
+					line-height: 0.4rem;
+					height: 55%;
+				}
+				.head_txt>p{display: none;}
+				.mtxt{display: block;}
+				.head_txt a{
+					font-size: 0.24rem;
+				}
+				.content{width: 100%;}
+				.content_head{
+					padding: 0.4rem 0.2rem;
+				}
+				.content_head span{
+					white-space: pre;
+					margin: 0 0.2rem;
+				}
+				.content_list{
+					width: 90%;
+					margin: auto;
+				}
+				.content_list li{
+					width: 48%;
+					height: auto;
+					box-shadow: none;
+					border-radius: 5px;
+				}
+				.content_list li img{width: 100%;position: inherit;}
+				.content_list li:nth-child(2),.content_list li:nth-child(3),.content_list li:nth-child(4){
+					margin-left: 0;
+				}
+				.content_list li:nth-child(1),.content_list li:nth-child(3){
+					margin-right: 0.2rem;
+				}
+			}
+			@media (max-width:300px ) {
+				body{
+					width: 300px;
+				}
+			}
+		</style>
+		
+		<script src="http://page-bucket.oiaqye7985.com/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			window.onload = function(){
+			    if(document.body.offsetWidth<=750){
+			    	 getRem(750,100)
+			    }
+			};
+			window.onresize = function(){
+			    if(document.body.offsetWidth<=750){
+			    	 getRem(750,100)
+			    }
+			};
+			function getRem(pwidth,prem){
+			    var html = document.getElementsByTagName("html")[0];
+			    var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+			    html.style.fontSize = oWidth/pwidth*prem + "px";
+			}
+			console.log(document.referrer)
+		</script>
+	</head>
+	<body>
+		<div class="head">
+			<img src="http://page-bucket.oiaqye7985.com/land-page/images/notfund/pcBg.jpg" width="100%" class="pcbg"/>
+			<img src="http://page-bucket.oiaqye7985.com/land-page/images/notfund/mibg.jpg" width="100%" class="mbg"/>
+			<div class="head_txt">
+				<p>您访问的页面地址有误或者该页面不存在！</p>
+				<p>如有疑问，您可以咨询在线客服，或直接拨打客服电话：40008-00101</p>
+				<p><a href="http://wayboo.com/"><< 信融首页</a></p>
+				<div class="mtxt">
+					<p>您访问的页面地址有误或者该页面不存在！</p>
+					<p>如有疑问，您可以咨询在线客服</p>
+					<p>或直接拨打客服电话：40008-00101</p>
+					<p><a href="http://wayboo.com/"><< 信融首页</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content_head">
+				<i></i>
+				<span>您可以到以下页面看看</span>
+				<i></i>
+			</div>
+			<ul class="content_list">
+				<li><a href="http://syb.wayboo.com/"><img src="http://page-bucket.oiaqye7985.com/land-page/images/notfund/listImg1.png"/></a></li>
+				<li><a href="http://wayboo.com/flow.html"><img src="http://page-bucket.oiaqye7985.com/land-page/images/notfund/listImg2.png"/></a></li>
+				<li><a href="http://wayboo.com/zhiT.html"><img src="http://page-bucket.oiaqye7985.com/land-page/images/notfund/listImg3.png"/></a></li>
+				<li><a href="http://wayboo.com/B2B.html"><img src="http://page-bucket.oiaqye7985.com/land-page/images/notfund/listImg4.png"/></a></li>
+				<li style="clear: both;width: 0;height: 0;"></li>
+			</ul>
+		</div>
+		
+	</body>
+	 <script type='text/javascript'> var xr_clientId = 28599; var syb_codeId = 15603; var xr_goUrl = 'http://d.jzl123.cn'; var qimoClientId = {nickName:'clientId:' + xr_clientId}; (function() { var kfm = document.createElement('script'); kfm.id = 'xr_kf_script'; kfm.setAttribute('charset', 'UTF-8'); kfm.src = xr_goUrl + '/public/js/xrkf.js?rnd=' + Math.random();  var kfs = document.getElementsByTagName('script')[0];   kfs.parentNode.insertBefore(kfm, kfs);})();</script><script>(function() {var urlTj = 'http://tj.wayboo.net.cn/TongJiCenter/js/tj.js';var script = document.getElementsByTagName('script');var ifHave = false; for (var i = 0; i < script.length; i++) {if(script[i].src.match(urlTj)){ifHave = true;break;}}if(!ifHave){var hm = document.createElement('script');hm.id = 'xr_tj_script'; hm.setAttribute('charset', 'UTF-8');hm.setAttribute('data_ci', 28599); hm.setAttribute('data_pt', 2); hm.src = urlTj + '?rnd=' + Math.random();var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hm, s);}})();</script>
+	 
+	
+	<script>
+	<script>
+       	$.ajax({
+				type:"post",
+				url:"http://zz.wayboo.net.cn/page/notfundRecord",
+				async:true,
+				data:{
+					requestUrl:JSON.stringify(window.location.href),
+					preRequestUrl:JSON.stringify(document.referrer)
+				},
+				success:function(str){
+					console.log(str)
+				},error:function(err){
+					console.log(err)
+				}
+			});
+
+</script>
+	 
+</html>

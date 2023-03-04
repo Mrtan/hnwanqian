@@ -1,0 +1,122 @@
+[field:head]
+  <div class="clear"></div> 
+ 
+  <div class="all"> 
+   <div class="inside_main"> 
+    <div class="main_left"> 
+          <div class="leftitem"> 
+      <div class="tit">
+产品分类
+      </div> 
+      <div class="cates"> 
+       <dl> 
+
+			{zso:protypelist(row='all' orderby='tj' parentid='0')}
+                   <dt><a href="[arcurl]">[typename]</a>
+				   {zso:selflist ( row='all' orderby='tj' type='parentid')}     
+				    <dt><a href="[arcurl]">&nbsp;>>[typename]</a></dt>
+					{/zso:selflist} 
+				   </dt>
+  {/zso:protypelist} 
+         
+       </dl> 
+      </div> 
+     </div>
+       
+       
+     <div class="leftitem"> 
+      <div class="tit">
+        联系我们 
+      </div> 
+      <div class="lianxi"> 
+       <dl> 
+        
+        <dd>
+    <p>联系:[field:linkpeople]</p>
+<p>手机: [field:mobile]</p>	
+<p>电话: [field:phone]</p>
+<p>传真: [field:companyfax]</p>
+<p>邮箱: [field:companyemail]</p>
+<p>网址:[field:companyurl]</p>	
+<p>地址: [field:companyaddress]</p>
+        </dd> 
+       </dl> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="main_right">
+    	<div class="sitemap">
+        	 
+                当前位置：[field:navigation]
+        </div>
+         <div class="content">
+                <div class="news_xaingxi">
+                 [productname]</div>
+                <div class="news_author">
+                  来源：[field:companyname] 发表时间：[begintime]
+                </div>
+                <div class="news_content">
+      <div class="pcsuo" style="text-align:center;"><img src="[path]" alt="[productname]" title="[productname]"></div>              
+	<p style="text-indent:2em;">
+	
+	<span style="font-size:14px;">[remark]</span>
+</p>
+<br/>
+ <div class="fanye"><span>上一条：<a href="[url_pre]">[product_pre]</a><br />下一条：<a href="[url_next]">[product_next]</a></span></div> 
+ <div class="tag">相关标签:[tag]</div>
+ <div class="hotcity">热门城市：[field:cityinfo]</div>
+			</div>
+                 
+                
+            </div>
+            <div class="clear">
+            </div>
+			<div class="aitemapa">
+        	 
+                相关产品
+        </div> 				
+ 
+<div class="cateslist" style="margin-top:10px;">
+                <dl>
+                     
+                    {zso:prolist (row='4' orderby='px' )}
+                    <dd>
+                        <div class="img">
+                            <a href="[arcurl]" >
+                                
+                                <img src="[path]" title="[productname]" alt="[productname]" height="211" width="182"/>
+                                </a></div>
+                        <div class="txt">
+                            <a href="[arcurl]"  >[productname]</a></div>
+                         
+                    </dd>
+                    
+                     {/zso:prolist} 
+                    
+                   
+                      
+                    
+                </dl>
+							 
+            </div> 
+       <div class="aitemapa">
+        	 
+                相关新闻
+        </div>  
+ <div class="newslist" style="border-left:1px solid #d5d5d5;border-right:1px solid #d5d5d5;border-bottom:1px solid #d5d5d5;">	 
+				<ul>
+                 {zso:newslist (row='5')}
+				<li><a href="[arcurl]"><p><span>[begintime]</span>[title] </p></a></li> 
+				 
+			   {/zso:newslist}
+				
+				 
+			    </ul>
+			    </div>
+
+    </div>
+   </div> 
+  </div> 
+[field:foot]
+ </body>
+</html>

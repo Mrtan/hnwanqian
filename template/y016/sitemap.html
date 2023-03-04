@@ -1,0 +1,130 @@
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script>if(window.outerWidth < 768) window.location = '/mobile';</script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+  <script>if (window.outerWidth < 768) window.location = '/mobile';</script>
+<title>[field:titleinfo]</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+
+<script>
+    var __CONTEXT_PATH = "/cmsadmin";
+    var _contextPath = "";
+    var _templatePath = "/tpl/demoprd/pdadventure/";
+    var _resBasePath = "/res/demoprd";
+    var _forbidF5 = true; var _forbidCopy = false; var _forbidContextMenu = false;
+</script>
+<link href="/template/[field:css_color]/lib/cms.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="/template/[field:css_color]/lib/jquery.js"></script>
+<script language="javascript" src="/template/[field:css_color]/lib/common.js"></script>
+<script language="javascript" src="/template/[field:css_color]/lib/tpl.js"></script>
+ 
+<link href="/template/[field:css_color]/lib/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/template/[field:css_color]/lib/png.js"></script>
+</head>
+ 
+<body>
+<div id="wrapper">
+[field:head]
+<div id="main">
+<div id="ileft">
+
+<div class="con">
+ 
+<div class="title">产品目录</div>
+ 
+<div class="submenu">
+<dl>
+{zso:protypelist (row='all' orderby='tj' parentid='0')}
+		<dt><a href="[arcurl]" target="">[typename]</a></dt>
+		{zso:selflist (row='all' orderby='tj' type='parentid')}
+								<dd><a href="[selflist.arcurl]">[selflist.typename]</a></dd>
+								{/zso:selflist}
+	{/zso:protypelist}
+</dl>
+</div>
+</div>
+
+<div class="con">
+ 
+<div class="title">联系我们</div>
+ 
+ 
+<div class="contact">
+	<p>
+<p>联系:[field:linkpeople]</p>
+<p>手机: [field:mobile]</p>	
+<p>电话: [field:phone]</p>
+<p>传真: [field:companyfax]</p>
+
+<p>网址: <a href="http://[field:companyurl]">[field:companyurl]</a></p>	
+<p>地址: [field:companyaddress]</p>
+</p>
+</div>
+ 
+</div>
+</div>
+<div id="right">
+<div class="con">
+ 
+<div class="title1"><div class="place">
+
+</div><h2><span>网站地图</span></h2></div><h6 class="clear"></h6>
+ 
+<div class="container">
+
+
+
+
+<div class="sitemap">
+		 <div class="title2"><h2>走近我们</h2></div><h6 class="clear"></h6>
+		  <dl><blockquote style="padding-left:8px;"></blockquote><font>
+		  
+		   {zso:about (row='all')}
+	         <a href="[arcurl]">[title]</a> |
+        {/zso:about}
+		  
+		  </font></dl>
+	   </div>
+	   
+	   
+	   <div class="sitemap">
+		 <div class="title2"><h2>新闻资讯</h2></div><h6 class="clear"></h6>
+		  <dl><blockquote style="padding-left:8px;"></blockquote><font>
+		  {zso:newstype (row='all')}
+		     <a href="[arcurl]"><span>[typename]</span></a> |
+        {/zso:newstype}
+		  
+		  </font></dl>
+	   </div>
+	   
+	   <div class="sitemap">
+		 <div class="title2"><h2>实力展示</h2></div><h6 class="clear"></h6>
+		  <dl><blockquote style="padding-left:8px;"></blockquote><font>
+		  
+		  {zso:protypelist(row='all')}
+	         <a href="[arcurl]"><span>[typename]</span></a> |
+        {/zso:protypelist}
+		  
+		  </font></dl>
+	   </div>
+	   
+	   <div class="sitemap">
+		 <div class="title2"><h2>联系我们</h2></div><h6 class="clear"></h6>
+		  <dl><blockquote style="padding-left:8px;"></blockquote><font>
+		  
+		   欢迎用户致电和垂询，我们将竭诚为您提供优质服务。
+		  
+		  </font></dl>
+	   </div>
+
+</div>
+</div>
+</div>
+<h6 class="clear"></h6>
+</div>
+  [field:foot]
+</div>
+</body>
+</html>

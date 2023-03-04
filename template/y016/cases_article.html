@@ -1,0 +1,77 @@
+[field:head]
+  <div class="clear"></div> 
+ 
+  <div class="all"> 
+   <div class="inside_main"> 
+    <div class="main_left"> 
+          <div class="leftitem"> 
+      <div class="tit">
+产品分类
+      </div> 
+      <div class="cates"> 
+       <dl>  
+{zso:casestype (row='all'  orderby='px')}
+                   <dt><a href="[arcurl]">[typename]</a>		
+				   </dt>
+   {/zso:casestype}
+       </dl> 
+      </div> 
+     </div>
+       
+       
+     <div class="leftitem"> 
+      <div class="tit">
+        联系我们 
+      </div> 
+      <div class="lianxi"> 
+       <dl> 
+        
+        <dd>
+    <p>联系:[field:linkpeople]</p>
+<p>手机: [field:mobile]</p>	
+<p>电话: [field:phone]</p>
+<p>传真: [field:companyfax]</p>
+<p>邮箱: [field:companyemail]</p>
+<p>网址:[field:companyurl]</p>	
+<p>地址: [field:companyaddress]</p>
+        </dd> 
+       </dl> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="main_right">
+    	<div class="sitemap">
+        	 
+                当前位置：[field:navigation]
+        </div>
+         <div class="content">
+                <div class="news_xaingxi">
+                 [title]</div>
+                <div class="news_author">
+                  来源：[field:companyname] 发表时间：[begintime]
+                </div>
+                <div class="news_content">
+      <div class="pcsuo" style="text-align:center;"><img src="[filepath]" alt="[title]" title="[title]"></div>              
+	<p style="text-indent:2em;">
+	
+	<span style="font-size:14px;">[info]</span>
+</p>
+<br/>
+ <div class="fanye"><span>[previouspage]: [prevurl]<br/>[nextpage]: [nexturl]</a></span></div> 
+ 
+			</div>
+                 
+                
+            </div>
+            <div class="clear">
+            </div>
+						
+ 
+
+      
+    </div>
+   </div> 
+  </div> 
+[field:foot]
+ </body>
+</html>
