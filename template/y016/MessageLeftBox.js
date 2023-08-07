@@ -1,8 +1,8 @@
 // JavaScript Document
 // JavaScript Document
-// JScript ÎÄ¼ş
+// JScript æ–‡ä»¶
 
- //·Ö±ğÊÇ¹Ø±Õ,×îĞ¡»¯,×î´ó»¯
+ //åˆ†åˆ«æ˜¯å…³é—­,æœ€å°åŒ–,æœ€å¤§åŒ–
  
     function showDiv(innerCall) {
         document.getElementById('PcPoPmarket').style.height = 275 + 'px';
@@ -17,9 +17,9 @@
     }    
    
     var s = "";
-    var url = "/admin/inquiry"; //Á´½Ó
+    var url = "/admin/inquiry"; //é“¾æ¥
     try {
-        //ÒÔÏÂÊÇÎªÁË¼æÈİ xhtml1.0 ºÍ html4Á½ÖÖÇé¿ö / ie6 ie7 ff µÄ¼æÈİÓÃhack
+        //ä»¥ä¸‹æ˜¯ä¸ºäº†å…¼å®¹ xhtml1.0 å’Œ html4ä¸¤ç§æƒ…å†µ / ie6 ie7 ff çš„å…¼å®¹ç”¨hack
         document.compatMode && document.compatMode != 'BackCompat'
         s += ('<span id=tmpAreaLmtDiv><DIV style="z-index:9;right:0;bottom:0; height:275px;width:250px;overflow:hidden;POSITION:fixed;' + (/MSIE 7/.test(navigator.appVersion) ? '' : '_position:absolute; _margin-top:expression(document.documentElement.clientHeight-this.style.pixelHeight+document.documentElement.scrollTop);') + '" id="PcPoPmarket" >');
         s += (' <div style="z-index:9; POSITION: absolute; width:250px; height:29px; overflow:hidden;"><span style="CURSOR: pointer;float:left;clear:none; width:123px; height:13px; overflow:hidden; margin:10px 5px;"></span><span title="\u5C55\u5F00" style="background:url('+url+'/images/fd.png);CURSOR: pointer;float:right; width:15px; height:13px; overflow:hidden;clear:none;display:none; margin:9px 15px 0 0; " onclick=showDiv() id="showvod"></span><span title="\u6700\u5C0F\u5316" style="background:url('+url+'/images/sx.png);CURSOR: pointer;float:right;overflow:hidden; width:15px; height:13px; clear:none; display:bolck; margin:9px 15px 0 0;" onclick=hideDiv() id="hidevod"></span></div> ');
